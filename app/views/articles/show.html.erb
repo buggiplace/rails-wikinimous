@@ -1,0 +1,10 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.details %></p>
+
+
+
+
+<%= link_to "Edit this Task", edit_article_path(@article) %>
+<%= link_to "Go back to overview", articles_path  %>
+<%= link_to "Delete this Task", article_path(@article), method: :delete,
+data: {confirm: 'Are you sure you want to delete this article?'}  %>

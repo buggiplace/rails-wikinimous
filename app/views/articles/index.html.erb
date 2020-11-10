@@ -1,0 +1,13 @@
+<h2>ARTICLE OVERVIEW</h2>
+<p>Click on the Article that you want to edit</p>
+
+<ul class="list-group">
+<% @articles.each do |article| %>
+<li>
+  <%= link_to article.title, article_path(article) %></li>
+<% end %>
+</ul>
+
+
+
+<%= link_to "Add new article", new_article_path  %>
